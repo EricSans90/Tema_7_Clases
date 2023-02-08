@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="330fa9dd-4bf9-4df5-bb05-de2d3044c9ce" name="Changes" comment="Ejercicio 7.15 empezado">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="330fa9dd-4bf9-4df5-bb05-de2d3044c9ce" name="Changes" comment="Ejercicio 7.15 terminado">
       <change beforePath="$PROJECT_DIR$/src/Calendario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calendario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675893932984</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ejercicio 7.15 terminado">
+      <created>1675895125729</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675895125729</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +89,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Ejercicio 7.11 hecho" />
     <MESSAGE value="Ejercicio 7.15 empezado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 7.15 empezado" />
+    <MESSAGE value="Ejercicio 7.15 terminado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 7.15 terminado" />
   </component>
 </project>

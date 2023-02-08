@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Calendario {
     private int año;
     private int mes;
@@ -48,4 +50,54 @@ public class Calendario {
         }
     }
 
+    public void incrementarMes(){
+        if(mes == 12){
+            mes =1;
+            año +=1;
+            }else{
+            mes +=1;
+        }
+        // Es posible que la nueva fecha no sea válida, por ejemplo al pasar del 30 de enero al "30 de febrero",
+        // lo ajustaremos dejando el último día del mes, aunque también podríamos imprimir un error
+        int diasEnMes = diasDelMes(año,mes);
+        if (dia > diasEnMes){
+            dia = diasEnMes;
+        }
+    }
+
+    public void incrementarAño(int cantidad){
+        año += cantidad;
+        // Es posible que la nueva fecha no sea válida, por ejemplo al pasar del 29 de febrero del 2024
+        // al "29 de febrero" de otro año que no fuese bisiesto. Lo ajustaremos dejando el último día del mes,
+        // aunque también podríamos imprimir un error
+        int diasEnMes = diasDelMes(año, mes);
+        if (dia > diasEnMes) {
+            dia = diasEnMes;
+        }
+    }
+
+    public void mostrar(){
+        System.out.println("La fecha es:");
+        System.out.println(dia+"/"+mes+"/"+año);
+    }
+
+    public boolean iguales(Calendario otraFecha){
+        if(año== otraFecha.getAño() && mes== otraFecha.getMes() && dia== otraFecha.getDia()){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int getAño() {
+        return año;
+    }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public int getDia() {
+        return dia;
+    }
 }
